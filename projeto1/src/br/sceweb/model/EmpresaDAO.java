@@ -22,7 +22,7 @@ public class EmpresaDAO {
 			ps.close();
 				
 			} catch (SQLException e){
-				throw new RuntimeException(e);
+				System.out.println("erro = " + e.getMessage());
 			}
 		return codigoRetorno;
 	}
